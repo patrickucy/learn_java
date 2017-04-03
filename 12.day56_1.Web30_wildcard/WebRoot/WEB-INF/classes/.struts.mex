@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="demo" location="449,137" size="177,262">
+    <action name="*_*" location="12,212" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="{1}{2}.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="FindUser.jsp" path="/WEB-INF/jsp/FindUser.jsp" location="200,50" size="150,55" />
+  <webResource name="AddUser.jsp" path="/WEB-INF/jsp/AddUser.jsp" location="50,200" size="150,55" />
+  <webResource name="UpdateUser.jsp" path="/WEB-INF/jsp/UpdateUser.jsp" location="50,350" size="150,55" />
+  <webResource name="{1}{2}.jsp" path="/WEB-INF/jsp/{1}{2}.jsp" location="50,500" size="150,55" />
+</Struts2Diagram>
+

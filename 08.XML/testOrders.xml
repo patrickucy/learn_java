@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orders>
+  <order type="vip">
+    <name>patrick</name>
+    <flight>JS1110</flight>
+    <time>2015-9-3-23-23</time>
+    <dest>Guangzhou</dest>
+  </order>
+  <order type="com">
+    <name>Android</name>
+    <flight>BJ9012</flight>
+    <time>2015-9-10-11-20</time>
+    <dest>Beijing</dest>
+  </order>
+</orders>

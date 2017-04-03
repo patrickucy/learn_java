@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="ss" extends="struts-default" namespace="/">
+	
+		<!-- 或者使用这种id的形式让spring帮去你找这个Action -->
+		<action name="hello" class="com.patrick.action.HelloAction" >
+	
+		<!-- <action name="hello" class="com.patrick.action.HelloAction" > -->
+			<result name="success">/hello.jsp</result>
+		</action>
+		
+		<action name="hello1" class="com.patrick.action.HelloAction1">
+			<result name="success">/hello.jsp</result>
+		</action>
+	
+	</package>
+</struts>    

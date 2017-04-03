@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="role" namespace="/role" extends="netctoss">
+		<action name="findRole">
+			<result name="success">/WEB-INF/role/findRole.jsp</result>
+		</action>
+		
+		<action name="toAddRole" class="com.patrick.action.role.ToAddRoleAction">
+			<result name="success">/WEB-INF/role/addRole.jsp</result>
+		</action>
+		
+		<action name="addRole" class="com.patrick.action.role.AddRoleAction">
+			<result name="success" type="redirectAction">findRole</result>
+		
+		</action>
+		
+	
+	</package>
+	
+</struts>    

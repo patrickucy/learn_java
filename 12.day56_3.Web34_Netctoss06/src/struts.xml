@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 定义一个公共的包,把公共的配置放于此包下, 如果其他package希望使用此包下的内容,只需要继承就好了 -->
+	<package name="netctoss" extends="json-default">
+		
+		<interceptors>
+			<interceptor name="loginInterceptor" class="com.patrick.interceptor.LoginInterceptor"></interceptor>
+			<interceptor-stack name="loginInterceptorStack">
+				<interceptor-ref name="loginInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<!-- 指定当前包下action默认引用的拦截器,也就是所有的action都有拦截器 -->
+		<default-interceptor-ref name="loginInterceptorStack"></default-interceptor-ref>
+		<!-- 定义全局的result, 全局result可以被当前包下所有的action访问, 相当于当前包下每个action
+			中都写了这个全局的result
+		 -->
+		<global-results>
+			<result name="login" type="redirectAction">
+				<!-- 跨包访问 -->
+				<param name="namespace">/login</param>
+				<param name="actionName">toLogin</param>
+			</result>
+		</global-results>	
+	
+	</package>
+
+
+	<package name="cost" namespace="/cost" extends="netctoss">
+		
+			
+			
+		<action name="findCost" class="com.patrick.action.FindCostAction">
+			<!-- inject a value to this property  -->
+			<param name="pageSize">4</param>
+			<result name="success">
+				/WEB-INF/cost/findCost.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/cost/error.jsp
+			</result>	
+		</action>
+		<action name="deleteCost"
+			class="com.patrick.action.DeleteCostAction">
+			<result name="success" type="redirect">
+				/WEB-INF/cost/findCost.jsp
+			</result>
+			<result name="error">/WEB-INF/cost/error.jsp</result>
+		</action>
+		<action name="toAddCost">
+			<result name="success">/WEB-INF/cost/addCost.jsp</result>
+		</action>
+		<action name="addCost" class="com.patrick.action.AddCostAction">
+			<result name="success" type="redirectAction">findCost</result>
+			<result name="error">/WEB-INF/cost/error.jsp</result>
+		
+		</action>
+		
+		<action name="checkCostName" class="com.patrick.action.CheckCostNameAction">
+			<result name="success" type="json">
+				<param name="root">isExist</param>			
+			</result>
+		</action>
+		
+		
+		<action name="toUpdateCost" class="com.patrick.action.ToUpdateCostAction">
+			<result name="success">/WEB-INF/cost/updateCost.jsp</result>
+		</action>
+		
+		<action name="updateCost" class="com.patrick.action.UpdateCostAction">
+			<result name="success" type="redirectAction"> findCost </result>
+			<result name="error">/WEB-INF/cost/error.jsp</result>
+		
+		</action>
+			
+	</package>
+	
+	<package name="login" namespace="/login" extends="struts-default">
+		<action name="toLogin">
+			<!-- if you are writing an action that doesn't require any logic process, you can 
+			 just ignore "class", struts2 will call a class "ActionSupport" and call its "execute()" 
+			 and return "success"  -->
+			 
+			<result name="success">/WEB-INF/main/login.jsp</result>
+		</action>
+		<action name="login" class="com.patrick.action.LoginAction">
+			<result name="success">/WEB-INF/main/index.jsp</result>
+			<result name="fail">/WEB-INF/main/login.jsp</result>
+		</action>
+		<action name="createImage" class="com.patrick.action.CreateImageAction">
+			<result name="success" type="stream">
+				<param name="inputName">imageStream</param>
+			</result>
+		</action>
+	</package>
+</struts>    

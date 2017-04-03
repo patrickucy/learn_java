@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>json.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+	<script type="text/javascript" src="js/prototype-1.6.0.3.js"></script>
+	<script type="text/javascript">
+		function f1() {
+			var p = {'name':'zs','age':22}; // this is an object
+			alert(p.name);
+		}
+		
+		function f2() {
+			var p = {
+			'name':'ww',
+			'address':{'city':'bj', 'street':'ca','room':1008}
+			};
+			
+			alert(p.address.room);
+		}
+		
+		
+		function f3() {
+			var arr = [{'name':'zs','age':22},{'name':'kitty','age':12},{'name':'jack','age':34}];
+			alert(arr[1].name);
+		}
+		
+		function f4() {
+			var obj = {'name':'tom','interest':[{'snooker':'A table game'},'cooking']};
+			alert(obj.interest[0].snooker);
+		}
+		
+		// convert a json string to a javaScript object(prototype)
+		function f5() {
+			var str = "{'name':'zs','age':22}";
+			var obj = str.evalJSON();
+			alert(obj.name);
+		}
+		
+		
+		function f6() {
+			var str = "[{'name':'zs','age':22},{'name':'ls','age':33}]";
+			var arr = str.evalJSON();
+			alert(arr[1].age);
+		}
+	</script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+    f1 <a href="javascript:;" onclick="f1();">click here</a> <br/>
+    f2 <a href="javascript:;" onclick="f2();">click here</a> <br/>
+    f3 <a href="javascript:;" onclick="f3();">click here</a> <br/>
+    f4 <a href="javascript:;" onclick="f4();">click here</a> <br/>
+    f5 <a href="javascript:;" onclick="f5();">click here</a> <br/>
+    f6 <a href="javascript:;" onclick="f6();">click here</a> <br/>
+
+
+    
+  </body>
+</html>

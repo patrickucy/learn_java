@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>s4.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		function f1() {
+			$('div:contains(eat)').css('font-size','80px');
+		}
+		
+		function f2() {
+			$('div:empty').html('placeholder').css('color','red');
+		}
+		
+		function f3() {
+			$('div:parent').css('color','orange');
+		}
+		
+		function f4() {
+			$('div:has(span)').css('color','orange');
+		}
+	</script>
+  </head>
+  
+  <body>
+    <div>Have you eaten yet?</div>
+    <div></div>
+    <div>
+    	<span>we are eating</span>
+    
+    </div>
+    <a href="javascript:;" onclick="f1();">f1() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f2();">f2() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f3();">f3() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f4();">f4() Click Me</a> <br/>
+    
+    
+  </body>
+</html>

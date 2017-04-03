@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+ 	<!-- 常量设置, 设置struts2 允许上传文件最大值为5000000 -->
+ 	<constant name="struts.multipart.maxSize" value="5000000"></constant>
+ 
+	<package name="p1" namespace="/demo" extends="struts-default">
+		<!-- register interceptor, order does matter here -->
+		<interceptors>
+			<interceptor name="first" class="com.patrick.interceptor.FirstInterceptor"></interceptor>
+			<interceptor name="second" class="com.patrick.interceptor.SecondInterceptor"></interceptor>
+		</interceptors>
+		
+		<action name="hello" class="com.patrick.action.HelloAction" method="execute">
+			<interceptor-ref name="first"></interceptor-ref>
+			<interceptor-ref name="second"></interceptor-ref>
+			
+			<!-- in order to prevent losing our default interceptor stack, wwe add it here manually -->
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="success">/hello.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<!-- upload page -->
+		<action name="toUpload">
+			<result name="success">/upload.jsp</result>
+		</action>
+		
+		<action name="upload" class="com.patrick.action.UploadAction">
+			<interceptor-ref name="fileUpload"> 
+				<param name="maximumSize">1000000</param>
+			</interceptor-ref>
+			<!-- 这里需要一个基础拦截器,因为这里不像defaultStakc, 它这里没有包含uploadFile这个拦截,
+				然而有两个最大容量的拦截器是会出现错误的, 即使你第一次拦截的是1mb,但还是不会阻止它访问
+				action, 当进入到第二个拦截器,假设是5mb的,最后就会被这个第二拦截器上传给action了. 说白了
+				你的拦截就无效了, 简单来说就按照这个方式写
+				用defaultStack就变成引用了两个拦截器
+			  -->
+			<interceptor-ref name="basicStack"></interceptor-ref>
+			<result name="success">/hello.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+
+
+</struts>    

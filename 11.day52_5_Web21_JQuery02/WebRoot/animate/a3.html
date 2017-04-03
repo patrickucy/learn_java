@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>a3.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style type="text/css">
+    	#d1{
+    		width: 200px;
+    		height:100px;
+    		background-color: orange;
+    		position:absolute;
+    	}
+    
+    </style>
+    
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#d1').click(function() {
+				// now you are using an animation queue, it aniamte the object one by one
+				$(this).animate({'left':'500px'},5000);
+				$(this).animate({'top':'250px'},2000).fadeOut('fast');
+			});
+			
+			 
+		});
+	
+	</script>
+  </head>
+  
+  <body>
+    <div id="d1">Testing animation</div>
+  </body>
+</html>

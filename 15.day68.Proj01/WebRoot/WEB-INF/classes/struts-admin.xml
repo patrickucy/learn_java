@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="admin" namespace="/admin" extends="netctoss">
+	<!-- you can extend this later -->
+		<action name="findAdmin">
+			<result name="success">/WEB-INF/admin/findAdmin.jsp</result>
+		</action>
+		
+		<action name="resetPassword" class="com.patrick.action.admin.ResetPasswordAction">
+			<result name="success" type="json">
+				<param name="root">ok</param>
+			</result>
+		</action>
+		
+		<action name="toAddAdmin">
+			<result name="success">/WEB-INF/admin/addAdmin.jsp</result>
+		</action>
+	</package>
+</struts>    

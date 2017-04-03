@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>first.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+     
+    <script type="text/javascript" src="js/jquery-1.4.3.js"></script>
+    <script type="text/javascript">
+    	// basic steps for jquery
+    	function f1() {
+			/* 
+			var $obj = $('div'); // $obj is a jquery object
+			$obj.css('font-size','90px').css('color','red'); 
+			*/
+			
+			$('div').css({'font-size':'90px','font-style':'italic'});
+		}
+    
+    	// dom --> jquery object
+    	function f2() {
+    		// obj is a dom object here
+			var obj = document.getElementById('d1');
+			// convert a dom object to jquery object
+			var $obj = $(obj);
+			$obj.css('font-style','italic');
+			
+			$obj.html('hello world');
+			
+		}
+		
+		
+		function f3() {
+			// jquery object to dom objecg
+			var $obj = $('#d2');
+			var obj = $obj.get(0);
+			obj.innerHTML = 'hello kitty';
+		}
+    </script>
+
+  </head>
+  <body style="font-size: 30px;">
+    <div onclick="f1();">Hello JQuery</div>
+    <div onclick="f2();" id="d1">Hello JQuery</div>
+    <div onclick="f3();" id="d2">Hello JQuery</div>
+    
+    
+    
+  </body>
+</html>

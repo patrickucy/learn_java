@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>11.day49_Web11_Listener</display-name>
+
+	<context-param>
+		<param-name>author</param-name>
+		<param-value>patrick</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>SomeServlet</servlet-name>
+		<servlet-class>web.SomeServlet</servlet-class>
+		<init-param>
+			<param-name>company</param-name>
+			<param-value>Apple_Inc</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>OtherServlet</servlet-name>
+		<servlet-class>web.OtherServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>web.LogoutServlet</servlet-class>
+  </servlet>
+
+
+
+	<listener>
+		<listener-class>web.CountListener</listener-class>
+	</listener>
+
+	<servlet-mapping>
+		<servlet-name>SomeServlet</servlet-name>
+		<url-pattern>/some</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>OtherServlet</servlet-name>
+		<url-pattern>/other</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

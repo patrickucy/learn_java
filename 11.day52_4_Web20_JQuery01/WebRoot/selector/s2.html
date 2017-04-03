@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>s2.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		function f1() {
+			//  find the div under #d0, this is why is called Hierarchy selector
+			$('#d0 div').css('font-size','80px');
+		}
+	
+		function f2() {
+			$('#d0>div').css('font-size','80px');
+			// but hello2 will inherit the style from hello1 even though it's not selected, unless it has its own style
+			
+		}
+		
+		
+		function f3() {
+			$('#d4+p').css('font-size','80px');
+		
+		}
+		
+		function f4() {
+			$('#d2~div').css('font-size','80px');
+		
+		}
+	</script>
+
+  </head>
+  
+  <body>
+    <div id="d0">
+    	<div id="d1">hello 1</div>
+    	<div id="d2">
+    		<div id="d3" style="font-size: 40px;">hello 2</div>   	
+    	</div>
+    	<div id="d4">hello 3</div>
+    	<p>hello 4</p>
+    	<div id="d5">hello 5</div>
+    	
+    </div>
+    
+    <a href="javascript:;" onclick="f1();">f1() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f2();">f2() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f3();">f3() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f4();">f4() Click Me</a> <br/>
+
+    
+    
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd" xmlns:tx="http://www.springframework.org/schema/tx">
+	
+	<!-- 开启组件扫描 -->	
+	<!-- <context:component-scan base-package="com.patrick"/> -->
+	<!-- 开启AOP配置 -->
+	<aop:aspectj-autoproxy/>
+	
+	
+	
+	
+		<!-- 配置CostDaoImpl -->
+	<bean id="costDao" class="com.patrick.dao.CostDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	
+	<!-- 在配置文件中不要随便写一个bean然后里面什么内容都没有,这样会影响Spring去加载,导致Spring容器无法使用 -->
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="url" value="jdbc:oracle:thin:@patrickawsoracledb.c9q2eh0o9e2k.us-west-2.rds.amazonaws.com:1521:ORCL"/>
+		<property name="username" value="patrick"/>
+		<property name="password" value="12345678"/>
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+		<property name="maxActive" value="20"/>
+	</bean>
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.Oracle9Dialect
+				</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="findCostsAction" class="com.patrick.action.cost.FindCostAction">
+		<property name="costDAO" ref="costDao"></property>
+	</bean>
+	
+	<!-- 声明式事务 -->
+	<!-- 1. 事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" /> 
+	<!-- 2.处理事务(AOP) advice(处理的方式) pointcut(哪里需要处理) -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<!-- 以save开头的方法, 都用required传播特性 -->
+			<tx:method name="save*" propagation="REQUIRED"/>
+			<tx:method name="delete*" propagation="REQUIRED"/>
+			<tx:method name="update*" propagation="REQUIRED"/>
+			<!-- 查询操作,可以选择 not_supported,也可以像下面这样子 -->
+			<tx:method name="find*" propagation="NOT_SUPPORTED" read-only="true"/> <!-- 现在流行这样子 -->
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<!-- 把包下的所有类找到,在找上面的方法的名字做pattern matching,主要配置到action里面 -->
+		<aop:pointcut expression="within(com.patrick.action.cost.*)" id="cost"/>
+		<!-- spring针对事物管理的专用标签 -->
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="cost"/>
+	</aop:config>
+	
+	
+</beans>

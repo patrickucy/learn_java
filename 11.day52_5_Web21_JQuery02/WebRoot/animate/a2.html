@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>a2.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style type="text/css">
+    	div{
+    		width: 200px;
+    		height:30px;
+    		background-color: orange;
+    		display:none;
+    	}
+    
+    </style>
+    
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		$(function() {
+		
+			/* 
+			// animation #1
+			$('a').toggle(function() {
+				$('div').show('fast',function(){
+					alert('show animation just finished');
+				});
+			},function() {
+				$('div').hide('slow');
+			}); 
+			*/
+			
+			
+			/* // animation #2
+			$('a').toggle(function() {
+				$('div').slideDown('fast',function(){
+					alert('show animation just finished');
+				});
+			},function() {
+				$('div').slideUp('slow');
+			});
+			 */
+			 
+			$('a').toggle(function() {
+				$('div').fadeIn('fast',function(){
+					alert('show animation just finished');
+				});
+			},function() {
+				$('div').fadeOut('slow');
+			});
+			 
+		});
+	
+	</script>
+  </head>
+  
+  <body>
+    <a href="javascript:;" >what is the next sentence for when i have long hair?</a>
+    	<div style="display:none">would you marry me ?</div>
+  </body>
+</html>

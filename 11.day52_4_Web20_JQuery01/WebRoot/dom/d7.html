@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>d7.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+  	<script type="text/javascript">
+  		$(function() {
+			$('#b1').click(function() {
+				// $('#d1').addClass('s1 s2');
+				// $('#d1').removeClass('s1');
+				$('#d1').toggleClass('s2');
+				alert('#s1').hasClass('s1');
+			});
+		});
+  	</script>
+  	<style type="text/css">
+  		.s1{
+  			color:red;
+  		}
+  		.s2{
+  			font-size: 80px;
+  		}
+  	</style>
+	
+  </head>
+  
+  <body>
+    <div id="d1">hello jquery</div>
+    
+    
+    <input type="button" value="click me" id="b1">
+  </body>
+</html>

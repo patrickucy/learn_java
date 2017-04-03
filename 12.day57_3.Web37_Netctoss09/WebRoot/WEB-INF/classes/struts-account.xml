@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="account" namespace="/account" extends="netctoss">
+		<action name="findAccount" class="com.patrick.action.account.FindAccountAction">
+			<param name="pageSize">5</param>
+			<result name="success">/WEB-INF/account/findAccount.jsp</result>
+			<result name="input">/WEB-INF/account/findAccount.jsp</result>
+		</action>
+		
+		<action name="startAccount" class="com.patrick.action.account.StartAccountAction">
+			<result name="success" type="json">
+				<!-- 返回一个值 -->
+				<param name="root">ok</param>
+			</result>
+		</action>
+		
+		<action name="toAddAccount">
+			<result name="success">/WEB-INF/account/addAccount.jsp</result>
+		</action>
+		
+		<action name="addAccount" class="com.patrick.action.account.AddAccountAction">
+			<result name="success" type="redirectAction">findAccount</result>
+		</action>
+		
+		<action name="searchRecommender" class="com.patrick.action.account.SearchRecommenderAction">
+			<result name="success" type="json"> <!-- return data to web page via ajax  -->
+				<param name="root">account</param>
+			</result>
+		
+		</action>
+		
+		
+		<action name="toUpdateAccount" class="com.patrick.action.account.ToUpdateAccountAction">
+			<result name="success">/WEB-INF/account/updateAccount.jsp</result>
+		</action>
+		
+		
+		<action name="updateAccount" class="com.patrick.action.account.UpdateAccountAction">
+			<result name="success" type="redirectAction">findAccount</result>
+			
+		</action>
+	</package>
+</struts>    

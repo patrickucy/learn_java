@@ -1,0 +1,33 @@
+/*comment*/ 
+div{
+	color: gray;
+	font-size: 50pt; 
+}
+
+/* use class selector */
+.s1{
+	color: purple;
+}
+
+
+h4.first{
+	background-color: #ccc;
+}
+
+/*id选择器*/
+#sss {
+	color: yellow;
+	font-size: 20pt;
+}
+
+/**派生选择器*/
+p span {
+	color: red;
+}
+
+
+/*使用伪类*/
+a:link {color: green;}
+a:hover {font-size: 20pt;}
+a:active {color: red;}
+a:visited {color: black;}

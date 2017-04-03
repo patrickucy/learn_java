@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>s3.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		// filter selector
+		function f1() {
+			$('table tr:first').css('background-color','gray');
+			$('tbody tr:even').css('background-color','yellow');
+			$('tbody tr:odd').css('background-color','orange');
+			
+		}
+		
+		function f2() {
+			$('tbody tr:eq(1) td:eq(1)').css('background-color','orange');
+		}
+	
+		function f3() {
+			$('tbody tr:not(#tr2)').css('background-color','orange');
+		}
+	</script>
+  </head>
+  
+  <body>
+    <table cellpadding="0" cellspacing="0" width="60%" border="1">
+    	<thead><tr> <td>name</td>  <td>age</td>   </tr></thead>
+    	<tbody>
+    		<tr> <td>tom</td>  <td>22</td>   </tr>
+    		<tr id="tr2"> <td>jetty</td> <td>23</td>   </tr>
+    		<tr> <td>sally</td> <td>34</td>   </tr>
+    		<tr> <td>eric</td>  <td>23</td>    </tr>
+    	</tbody>
+    </table>
+     <a href="javascript:;" onclick="f1();">f1() Click Me</a> <br/>
+     <a href="javascript:;" onclick="f2();">f2() Click Me</a> <br/>
+     <a href="javascript:;" onclick="f3();">f3() Click Me</a> <br/>
+    
+  </body>
+</html>

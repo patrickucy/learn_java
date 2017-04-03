@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="cost" location="52,127" size="257,102">
+    <action name="findCost" location="7,25" size="97,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="findCost.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="findCost.jsp" path="/WEB-INF/cost/findCost.jsp" location="350,50" size="150,55" />
+  <webResource name="error.jsp" path="/WEB-INF/cost/error.jsp" location="370,243" size="150,55" />
+  <package name="login" location="310,459" size="190,160">
+    <action name="toLogin" location="5,24" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="login.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="login.jsp" path="/WEB-INF/main/login.jsp" location="50,350" size="150,55" />
+</Struts2Diagram>
+

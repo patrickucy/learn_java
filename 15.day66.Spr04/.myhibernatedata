@@ -1,0 +1,17 @@
+#MyEclipse Hibernate Properties
+#Wed Oct 07 00:22:39 PDT 2015
+genVersionTag=false
+sessionFactoryName=com.patrick.util.HibernateSessionFactory
+genAnnotations=false
+configFile=/15.day66.Spr04/src/applicationContext.xml
+reStrategyClass=
+sessionFactoryId=sessionFactory
+profile=
+detectM2M=false
+genBasicCompId=false
+keyGenerator=
+createConfigFile=true
+basePersistenceClass=
+detectO2O=false
+useJavaTypes=true
+reSettingsFile=

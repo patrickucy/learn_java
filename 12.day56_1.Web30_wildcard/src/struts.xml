@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="demo" namespace="/demo" extends="struts-default">
+	
+	<!-- old fashion way  -->
+		<!--
+		 <action name="FindUser"
+			class="com.patrick.action.FindUserAction">
+			<result name="success">/WEB-INF/jsp/FindUser.jsp</result>
+		</action>
+		<action name="AddUser"
+			class="com.patrick.action.AddUserAction">
+			<result name="success">/WEB-INF/jsp/AddUser.jsp</result>
+		</action>
+		<action name="UpdateUser"
+			class="com.patrick.action.UpdateUserAction">
+			<result name="success">/WEB-INF/jsp/UpdateUser.jsp</result>
+		</action> 
+		-->
+		
+	<!-- new way
+	 	1. user * replace with key word, we user the first * to represent action and the second
+	 	* as the module, user _ to separate them
+	 	2. we user {n} to represent the nth *
+	 -->
+	<action name="*_*" class="com.patrick.action.{1}{2}Action">
+		<result name="success">/WEB-INF/jsp/{1}{2}.jsp</result>
+	</action>
+		
+	
+	</package>
+</struts>    

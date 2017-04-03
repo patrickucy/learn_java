@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>JS Intro</title>
+	<script type="text/javascript" src="Demo01_JSIntro.js"></script>
+
+	<!-- 这里的language-javascript是可选的,新的标准就直接用sublime提示就好了 -->
+	<script type="text/javascript" language="javascript">  
+		function firstMethod () {
+
+			// alert("\u9fa5");
+			// 没有返回类型
+
+
+			// var s = "aa";
+			// var n = 1;
+			// var b1 = true;
+			// var b2 =false;
+			// alert(s+n); //aa1
+			// alert(n+b1); //2
+			// alert(s+b1); // aatrue
+			// alert(s+b2); // aafalse
+			// alert(b1+b2); // 1
+
+
+			// var a = "10";
+			// var b = 10;
+			// if(a == b){
+			// 	alert("equal");
+			// };
+			// if(a === b){
+			// 	alert("same");
+			// };
+
+			var sum = 0; //没有初始值就会使undefined类型的变量
+			for (var i = 0; i <= 100; i++) {
+				sum+=i;
+			};
+			alert(sum);
+
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="button" value="First Button" onclick="alert('Hello World');">
+		<!-- 脚本中字符串单引号和双引号都是可以用的,这是因为避免冲突,当然最好不要这么写 -->
+		<input type="button" value="Second Button" onclick="firstMethod();">
+		<input type="button" value="Third Button" onclick="secondMethod();">
+
+	</form>
+
+
+	<br>
+	<input type="text" id="txtNumber">
+	<input type="button" value="calculate square" onclick="getSquare();">
+
+	<br>
+	<!-- 过滤文本框中录入的敏感字符(一旦录入完毕,将gcd替换为*) -->
+	replace gcd to * <br>
+	<input id="txtS" type="text" onblur="replaceString();" >
+
+	<br>
+	<input type="text" id="txtA" value="6,12,65,333,9">
+	<input type="button" value="reverse" onclick="operateArray(1);"> 
+	<input type="button" value="sortByString" onclick="operateArray(2)"> 
+	<input type="button" value="sortByNumber" onclick="operateArray(3)"> 
+
+	<input type="button" value="getRandomNumber" onclick="getRandom(3,10)"> 
+
+	<br>
+	Username: <input type="text" id="txtN" onblur="validName();"> 3~5 chars and nums
+
+	<br>
+	<input type="button" value="test Date object" onclick="testDate();">
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>s5.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		function f1() {
+			//$('div:hidden').css('display','block');
+			$('div:hidden').show('slow');
+		}
+		
+		function f2() {
+			$('div:visible').hide('slow');
+		}
+	</script>
+  </head>
+  
+  <body>
+    <div style="display: none;">hello JQuery</div>
+    <div>hello jquery</div>
+    <a href="javascript:;" onclick="f1();">f1() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f2();">f2() Click Me</a> <br/>
+
+    
+    
+  </body>
+</html>

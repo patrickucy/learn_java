@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>CSS More</title>
+	<style type="text/css">
+		div{
+			border: 1px solid black;
+			width: 100px;
+			height: 100px;
+		}
+		a:link{
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+			font-weight: bold;
+		}
+		p{
+			text-indent: 10px;
+		}
+		td{
+			height: 30px;
+			border: 1px solid red;
+			text-align: center;
+			vertical-align: top;
+			/*only available in table cell*/
+		}
+	</style>
+</head>
+<body stye="background-image:url(images/fish.jpg); background-attachment:fixed">
+
+
+	<div></div>
+	<div>
+			<div style="position: absolute; width: 80px; height:80px; background-color:silver; left:10px; top: 20px;"></div>
+	</div>
+	<div></div>
+
+	-------------------------------------------------
+
+	<div></div>
+	<div style="position: relative; top: 10px; left: 20px; background-color:silver;z-index:-1;"></div>
+	<div></div>
+
+
+	<a href="#" style="width:100px; height:50px; background-image; url(clock.png): border:1px solid">click me</a>
+
+
+
+	<div style="float: left;"></div>
+	<div style="float: left;"></div>
+	<br><br><br><br><br><br><br><br>
+	<div style="float: left;"></div>
+	<!-- 在这个距离最近的这个元素的地方添加一个clear就可以消除上面的浮动对下面的元素的影响 -->
+	<p style="clear: left;">段落文本</p>
+
+	<a href="http://www.jd.com">www.jd.com</a>
+
+	<p style="width:300px; height:50px; text-indent:10px; line-height:100%"> 第一段作文,第一段作文</p>
+
+	<table style="width: 200px; border: 1px solid black; border-collapse: collapse;">
+		<tr>
+			<td>ab</td>
+			<td>ab</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>

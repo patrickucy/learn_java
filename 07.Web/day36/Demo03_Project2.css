@@ -1,0 +1,214 @@
+body{ /*customized your body setting here*/
+	margin: 0px;
+	padding: 0px;
+}
+div{
+	border: 1px solid black;
+	margin: 0px auto;
+}
+
+#header,#footer{
+	width: 960px;
+}
+
+#header{
+	height: 61px;
+}
+
+#navi{
+	width: 100%;
+	height: 91px;
+}
+
+#main{
+	width: 950px;
+	height: 410px;
+	border: 5px solid #8ac1db;
+}
+
+#footer{
+	height: 50px;
+}
+
+#operator,#datalist,#pages{
+	width: 910px;
+} 
+
+#operator{
+	height: 30px;
+}
+
+#datalist{
+	height: 340px;
+}
+
+#pages{
+	height: 28px;
+}
+/* define images for divisions*/
+body{
+	background-image: url(images/body_bg.png);
+	background-repeat: repeat-x;
+}
+#header{
+	background-image: url(images/top_bg.png);
+	background-repeat: no-repeat;
+}
+
+#navi{
+	background-image: url(images/navigation.png);
+	background-repeat: repeat-x;
+}
+
+#main{
+	background-color: #e8f3f8;
+
+}
+/*text 样式,派生选择器,只能是header 里面的a才用这个样式*/
+#header{
+	text-align: right;
+}
+#header a{
+	color: white;
+	text-decoration: none;
+	line-height: 61px;
+	margin-right: 40px;
+}
+
+#header a:hover{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#footer p{
+	 /*border: 1px solid red; */
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	text-align: center;
+	line-height: 25px;
+}
+
+/*定义样式为表*/
+#dataTable {
+	width: 900px;
+	text-align: center;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+/*你不需要声明在td之前声明一个tr这里,只要是包含的就好了*/
+#dataTable td{
+	border: 1px solid #ccc;
+	height: 30px;
+
+}
+
+#dataTable tr.header{
+	background-color: #fbedce;
+	font-weight: bold;
+}
+
+#dataTable tr.header td{
+	height: 40px;
+}
+
+#dataTable tr:hover{
+	background-color: #f7f9fd;
+}
+
+/*为按钮定义样式, 类选择*/
+input.modify, input.delete{
+	border: 0px;
+	width: 70px;
+	height: 28px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	background-color: white;
+}
+
+input.modify{
+	background-image: url(images/modification.png);
+}
+
+input.delete{
+	background-image: url(images/delete.png);
+}
+
+#header img{
+	float: left;
+}
+
+/*定义导航菜单*/
+#menu {
+	list-style-type: none;
+	width: 960px;
+	margin: 2px auto;
+}
+
+#menu li a{
+	display: block;
+	width: 68px;
+	height: 77px;
+}
+
+/*实际上是li在浮动,而不是a*/
+#menu li{
+	float: left;
+	margin: 0px 14px;
+}
+
+a.index {
+	background-image: url(images/index_out.png);
+}
+
+a.role {
+	background-image: url(images/role_out.png);
+}
+
+a.admin {
+	background-image: url(images/admin_out.png);
+}
+
+/*为操作信息提示框定义样式*/
+#main {
+	position: relative;
+	/*为了实现框的定位*/
+}
+#result {
+	width: 400px;
+	height: 70px;
+	border: 1px solid #f57676;
+	background-color: #fdecec; 
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+#result span {
+	line-height: 70px;
+	margin-left: 50px;
+}
+
+#result img{
+	float: right;
+	margin:5px 5px 0px 0px;
+	cursor: pointer;
+}
+
+/*准备两种样式,一个给成功一个给失败的*/
+div.success {
+	background-image: url(images/ok.png);
+	color: #af6606;
+}
+div.fail {
+	background-image: url(images/warning.png);
+	color: red;
+}
+
+
+
+
+

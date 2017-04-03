@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+<!-- 声明定义DAO组件 -->
+<bean id="hibernateCostDao" class="com.patrick.dao.HibernateCostDAOImpl" scope="prototype" lazy-init="default" init-method="myInit">
+</bean>
+
+<bean id="jdbcCostDao" class="com.patrick.dao.JdbcCostDAOImpl" scope="prototype"></bean>
+<bean id="deleteCostAction" scope="prototype" class="com.patrick.action.DeleteCostAction">
+	<!-- 构造方式注入, index 代表第几个参数 -->
+	<constructor-arg index="0" ref="jdbcCostDao"></constructor-arg>
+
+</bean>
+
+
+
+<bean id="addCostAction" class="com.patrick.action.AddCostAction" scope="prototype">
+	<!-- set 注入配置, 注意这里的名字是跟setter方法的名字是一致,也可以说跟属性变量一致(因为变量通常都是跟setter()一样的) -->
+	<property name="costDao" ref="hibernateCostDao"></property>
+</bean>
+
+<bean id="msgAction" class="com.patrick.action.MessageAction" >
+	<!-- 实际上就是通过Spring给传值进去了 -->
+	<property name="msg" value="资费管理"></property>
+	<property name="pageSize" value="5"></property>
+	<property name="fileTypes" value="jpg,gif,jpeg"></property>
+	<property name="hbms">
+		<list>
+			<value>com/patrick/entity/Cost.hbm.xml</value>
+			<value>com/patrick/entity/Account.hbm.xml</value>
+			<value>com/patrick/entity/Service.hbm.xml</value>
+		</list>
+	</property>
+	<property name="friends">
+		<set>
+			<value>Larry Ellision</value>
+			<value>Mark Zakerburge</value>
+			<value>Steve Jobs</value>
+			<value>Bill Gates</value>
+			<value>Martin Fowler</value>
+		</set>
+	</property>
+	<property name="books">
+		<map>
+			<entry key="1001" value="intro to java"></entry>
+			<entry key="1002" value="Java Web development"></entry>
+			<entry key="1003" value="SSH advanced topics"></entry>
+			<entry key="1004" value="design pattern"></entry>
+		</map>
+	</property>
+	<property name="pros">
+		<props>
+			<prop key="username">patrick</prop>
+			<prop key="password">12345</prop>
+			<prop key="url">jdbc:oracle:thin@10.0.0.4:1521:ex</prop>
+		</props>
+	</property>
+</bean>
+
+
+</beans>

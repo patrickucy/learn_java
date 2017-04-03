@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>d1.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style>
+    	.s1{
+    		color: yellow;
+    	}
+    </style>
+    
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		function f1() {
+			var a = $('#d1').html();
+			var b = $('#d1').text();
+			alert(a);
+			alert(b);
+		}
+		
+		function f2() {
+			$(':text').val('tom');
+		}
+	
+	
+		function f3() {
+			//alert($('#username').attr('id'));
+			//$('#d1').attr('style','color:red; font-size:90px;');
+			$('#d1').attr('class','s1');
+		}
+	</script>
+  </head>
+  
+  <body>
+    <div id="d1">
+    	<span>hello java</span>
+    </div>
+   	username: <input name="username" id="username"> <br/>
+    
+    <a href="javascrip:;" onclick="f1();">Click me </a> <br/>
+    <a href="javascrip:;" onclick="f2();">Click me </a> <br/>
+    <a href="javascrip:;" onclick="f3();">Click me </a> <br/>
+  </body>
+</html>

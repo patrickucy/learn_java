@@ -1,0 +1,115 @@
+body{ /*customized your body setting here*/
+	margin: 0px;
+	padding: 0px;
+}
+div{
+	border: 1px solid black;
+	margin: 0px auto;
+}
+
+#header,#footer{
+	width: 960px;
+}
+
+#header{
+	height: 61px;
+}
+
+#navi{
+	width: 100%;
+	height: 91px;
+}
+
+#main{
+	width: 950px;
+	height: 410px;
+	border: 5px solid #8ac1db;
+}
+
+#footer{
+	height: 50px;
+}
+
+#operator,#datalist,#pages{
+	width: 910px;
+} 
+
+#operator{
+	height: 30px;
+}
+
+#datalist{
+	height: 340px;
+}
+
+#pages{
+	height: 28px;
+}
+/* define images for divisions*/
+body{
+	background-image: url(images/body_bg.png);
+	background-repeat: repeat-x;
+}
+#header{
+	background-image: url(images/top_bg.png);
+	background-repeat: no-repeat;
+}
+
+#navi{
+	background-image: url(images/navigation.png);
+	background-repeat: repeat-x;
+}
+
+#main{
+	background-color: #e8f3f8;
+
+}
+/*text 样式,派生选择器,只能是header 里面的a才用这个样式*/
+#header{
+	text-align: right;
+}
+#header a{
+	color: white;
+	text-decoration: none;
+	line-height: 61px;
+	margin-right: 40px;
+}
+
+#header a:hover{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#footer p{
+	 /*border: 1px solid red; */
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	text-align: center;
+	line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

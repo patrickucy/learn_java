@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>a1.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#b1').click(function() {
+				// var $obj = $('ul li');
+				//alert($obj.length);
+				
+				
+				/*
+				$obj.each(function(i) { // i is the current index 
+					// current enumerating object
+					if(i==0){
+						$(this).css('font-size','80px');
+					}
+				});
+				*/
+				
+				
+				
+				/*
+				var $obj = $('ul li');
+				var $o = $obj.eq(2);
+				$o.css('font-size','80px');
+				
+				
+				var o = $obj.get(1);
+				o.innerHTML = 'hello world';
+				*/
+				
+				
+				
+				/* 
+				var $obj = $('ul li');
+				var $o = $obj.eq(1);
+				var index = $obj.index($o);
+				alert(index);
+				 */
+				 
+				 var $obj = $('ul li');
+				 var arr = $obj.get();
+				 arr[2].innerHTML = 'hello jquery';
+			});	
+		});
+		
+	
+	</script>
+  </head>
+  
+  <body>
+    <ul>
+    	<li>item1</li>
+    	<li>item2</li>
+    	<li>item3</li>
+    
+    </ul>
+    <button id="b1">Click me</button>
+  </body>
+</html>

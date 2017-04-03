@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="cost" location="3,44" size="327,147">
+    <action name="findCost" location="18,36" size="97,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="findCost.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="deleteCost" location="168,44" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="findCost.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="error.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="login" location="51,537" size="229,394">
+    <action name="toLogin" location="8,31" size="150,65">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="login.jsp" />
+      </result>
+    </action>
+    <action name="login" location="9,111" size="150,75">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="login.jsp" />
+      </result>
+    </action>
+    <action name="createImage" location="12,201" size="150,40">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="findCost.jsp" path="/WEB-INF/cost/findCost.jsp" location="350,50" size="150,55" />
+  <webResource name="error.jsp" path="/WEB-INF/cost/error.jsp" location="370,243" size="150,55" />
+  <webResource name="login.jsp" path="/WEB-INF/main/login.jsp" location="457,461" size="150,233" />
+  <webResource name="index.jsp" path="/WEB-INF/main/index.jsp" location="407,736" size="150,233" />
+</Struts2Diagram>
+

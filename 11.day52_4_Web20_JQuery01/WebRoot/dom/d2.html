@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>d2.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+  	<script type="text/javascript">
+  		function f1(){
+  			//$('body').append('<div>what did you say?</div>');
+   			$('body').prepend('<div>what did you say?</div>');
+  		}
+  	
+  	
+  		function f2() {
+  			$('ul').after('<p>hello jquery</p>');
+  		}
+  	
+
+  	</script>
+	
+  </head>
+  
+  <body>
+   <a href="javascript:;" onclick="f1();">Hello ? </a>
+    
+    
+    <ul>
+    	<li>item1</li>
+    	<li>item2</li>
+    	<li>item3</li>
+    	<li>item4</li>
+    	<li>item5</li>
+    </ul>
+    <button onclick="f2();">Click me</button>
+  </body>
+</html>

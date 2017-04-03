@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ads.html</title>
+
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta name="content-type" content="text/html; charset=US-ASCII">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+<style type="text/css">
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#d1 {
+	border: 1px solid #aaaaaa;
+	margin-left: 200px;
+	margin-top: 40px;
+	width: 548px;
+	height: 177px;
+	overflow: hidden;
+	position: relative;
+}
+
+#adv,#num {
+	position: absolute;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+}
+
+ul img {
+	width: 548px;
+	height: 177px;
+	display: block;
+}
+
+#num {
+	right: 10px;
+	bottom: 10px;
+}
+
+#num li {
+	color: white; float : left;
+	height: 20px;
+	width: 20px;
+	font-family: Arial;
+	font-size: 12px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 3px 1px;
+	border: 1px solid #FF7300;
+	float: left;
+}
+
+.on {
+	line-height: 21px;
+	width: 21px;
+	height: 21px;
+	font-size: 16px;
+	margin: 0 1px;
+	border: 0;
+	background-color: red;
+	font-weight: bold;
+}
+</style>
+</head>
+<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+<script type="text/javascript">
+		$(function() {
+			$('#num li').mouseenter(function() {
+				// get the index from the ad via the cursor
+				var index = $('#num li').index(this);
+				// roll our pic
+				showImage(index);
+			}).eq(0).mouseenter();
+			
+			
+			var i = 0;
+			var taskID;
+			$('#d1').hover(function() {
+				// mouseenter
+				clearInterval(taskID);
+			},function(){
+				// mouseleave
+				taskID = setInterval(function() {
+					showImage(i);
+					i++;
+					if(i==5){
+						i=0;
+					}
+				},1000);
+			}).mouseleave();
+				
+		});
+	
+		function showImage(index) {
+		
+			// clear all accumulate animations and execute the last animation instruction
+			$('#adv').stop(true).animate({'top': -index * 177},'500'); 
+			
+			// highlight object being pointed by cursor
+			$('#num li').eq(index).addClass('on').siblings().removeClass('on');
+		}
+	</script>
+<body>
+	<div id="d1">
+		<ul id="adv">
+			<li><img src="../images/0.png" /></li>
+			<li><img src="../images/1.png" /></li>
+			<li><img src="../images/2.png" /></li>
+			<li><img src="../images/3.png" /></li>
+			<li><img src="../images/4.png" /></li>
+
+		</ul>
+		<ul id="num">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+
+
+		</ul>
+
+	</div>
+</body>
+</html>

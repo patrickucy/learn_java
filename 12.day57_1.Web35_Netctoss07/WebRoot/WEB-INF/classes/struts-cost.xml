@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="cost" namespace="/cost" extends="netctoss">
+		
+		<action name="findCost" class="com.patrick.action.cost.FindCostAction">
+			<!-- inject a value to this property  -->
+			<param name="pageSize">5</param>
+			<result name="success">
+				/WEB-INF/cost/findCost.jsp
+			</result>
+	
+		</action>
+		<action name="deleteCost" class="com.patrick.action.cost.DeleteCostAction">
+			<result name="success" type="redirectAction">
+				findCost
+			</result>
+		</action>
+		<action name="toAddCost">
+			<result name="success">/WEB-INF/cost/addCost.jsp</result>
+		</action>
+		<action name="addCost" class="com.patrick.action.cost.AddCostAction">
+			<result name="success" type="redirectAction">findCost</result>		
+		</action>
+		
+		<action name="checkCostName" class="com.patrick.action.cost.CheckCostNameAction">
+			<result name="success" type="json">
+				<param name="root">isExist</param>			
+			</result>
+		</action>
+		
+		
+		<action name="toUpdateCost" class="com.patrick.action.cost.ToUpdateCostAction">
+			<result name="success">/WEB-INF/cost/updateCost.jsp</result>
+		</action>
+		
+		<action name="updateCost" class="com.patrick.action.cost.UpdateCostAction">
+			<result name="success" type="redirectAction"> findCost </result>
+		</action>
+			
+	</package>
+
+
+</struts>
+	

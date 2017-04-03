@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>e4.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('a').click(function(e) {
+				alert('you click a link');
+				e.stopPropagation();
+				
+			});
+			
+			$('div').click(function() {
+				alert('you just click a div');
+			});
+		});
+	</script>
+	
+	
+  </head>
+  
+  <body>
+    <div style="width: 200px; border:1px solid red">
+    	<a href="javascript:;" > click me</a>
+    
+    </div>
+  </body>
+</html>

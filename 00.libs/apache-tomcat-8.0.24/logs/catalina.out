@@ -1,0 +1,361 @@
+12-Aug-2015 08:03:50.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.24
+12-Aug-2015 08:03:50.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2015 20:19:55 UTC
+12-Aug-2015 08:03:50.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.24.0
+12-Aug-2015 08:03:50.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+12-Aug-2015 08:03:50.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.10.4
+12-Aug-2015 08:03:50.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+12-Aug-2015 08:03:50.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+12-Aug-2015 08:03:50.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+12-Aug-2015 08:03:50.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Aug-2015 08:03:50.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:03:50.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:03:50.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/conf/logging.properties
+12-Aug-2015 08:03:50.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Aug-2015 08:03:50.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/endorsed
+12-Aug-2015 08:03:50.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:03:50.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:03:50.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/temp
+12-Aug-2015 08:03:50.874 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/patrickyu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+12-Aug-2015 08:03:51.103 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:03:51.146 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Aug-2015 08:03:51.153 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:03:51.155 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Aug-2015 08:03:51.156 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 961 ms
+12-Aug-2015 08:03:51.188 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Aug-2015 08:03:51.188 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.24
+12-Aug-2015 08:03:51.199 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/docs
+12-Aug-2015 08:03:51.602 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/docs has finished in 402 ms
+12-Aug-2015 08:03:51.603 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/examples
+12-Aug-2015 08:03:52.065 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/examples has finished in 463 ms
+12-Aug-2015 08:03:52.065 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/host-manager
+12-Aug-2015 08:03:52.108 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/host-manager has finished in 42 ms
+12-Aug-2015 08:03:52.108 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/manager
+12-Aug-2015 08:03:52.146 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/manager has finished in 38 ms
+12-Aug-2015 08:03:52.146 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/ROOT
+12-Aug-2015 08:03:52.168 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/ROOT has finished in 21 ms
+12-Aug-2015 08:03:52.173 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:03:52.182 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:03:52.183 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1027 ms
+12-Aug-2015 08:05:09.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.24
+12-Aug-2015 08:05:09.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2015 20:19:55 UTC
+12-Aug-2015 08:05:09.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.24.0
+12-Aug-2015 08:05:09.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+12-Aug-2015 08:05:09.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.10.4
+12-Aug-2015 08:05:09.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+12-Aug-2015 08:05:09.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+12-Aug-2015 08:05:09.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+12-Aug-2015 08:05:09.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Aug-2015 08:05:09.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:05:09.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:05:09.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/conf/logging.properties
+12-Aug-2015 08:05:09.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Aug-2015 08:05:09.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/endorsed
+12-Aug-2015 08:05:09.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:05:09.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:05:09.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/temp
+12-Aug-2015 08:05:09.495 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/patrickyu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+12-Aug-2015 08:05:09.708 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:05:09.739 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["http-nio-8080"]
+ java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:339)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:737)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:457)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:120)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+12-Aug-2015 08:05:09.742 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:339)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:737)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:457)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:120)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 13 more
+
+12-Aug-2015 08:05:09.743 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:05:09.745 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["ajp-nio-8009"]
+ java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:339)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:737)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:457)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+12-Aug-2015 08:05:09.745 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:339)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:737)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:457)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 13 more
+
+12-Aug-2015 08:05:09.746 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 837 ms
+12-Aug-2015 08:05:09.780 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Aug-2015 08:05:09.780 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.24
+12-Aug-2015 08:05:09.791 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/docs
+12-Aug-2015 08:05:10.152 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/docs has finished in 362 ms
+12-Aug-2015 08:05:10.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/examples
+12-Aug-2015 08:05:10.550 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/examples has finished in 397 ms
+12-Aug-2015 08:05:10.550 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/host-manager
+12-Aug-2015 08:05:10.583 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/host-manager has finished in 33 ms
+12-Aug-2015 08:05:10.583 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/manager
+12-Aug-2015 08:05:10.610 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/manager has finished in 27 ms
+12-Aug-2015 08:05:10.611 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/ROOT
+12-Aug-2015 08:05:10.633 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/ROOT has finished in 22 ms
+12-Aug-2015 08:05:10.637 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 891 ms
+12-Aug-2015 08:05:10.643 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:420)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:713)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+12-Aug-2015 08:05:10.644 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:05:10.644 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:05:10.644 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+12-Aug-2015 08:05:10.679 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:05:10.679 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:05:10.680 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:05:10.680 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:10:39.474 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Aug-2015 08:10:39.475 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:10:39.533 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:10:39.587 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+12-Aug-2015 08:10:39.624 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:10:39.629 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:10:39.629 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:10:39.630 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:13:37.636 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.24
+12-Aug-2015 08:13:37.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2015 20:19:55 UTC
+12-Aug-2015 08:13:37.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.24.0
+12-Aug-2015 08:13:37.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+12-Aug-2015 08:13:37.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.10.4
+12-Aug-2015 08:13:37.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+12-Aug-2015 08:13:37.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+12-Aug-2015 08:13:37.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+12-Aug-2015 08:13:37.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Aug-2015 08:13:37.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:13:37.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:13:37.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/conf/logging.properties
+12-Aug-2015 08:13:37.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Aug-2015 08:13:37.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/endorsed
+12-Aug-2015 08:13:37.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:13:37.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24
+12-Aug-2015 08:13:37.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/temp
+12-Aug-2015 08:13:37.641 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/patrickyu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+12-Aug-2015 08:13:37.833 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:13:37.875 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Aug-2015 08:13:37.885 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:13:37.915 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Aug-2015 08:13:37.917 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 861 ms
+12-Aug-2015 08:13:37.953 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+12-Aug-2015 08:13:37.953 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.24
+12-Aug-2015 08:13:37.965 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/docs
+12-Aug-2015 08:13:38.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/docs has finished in 414 ms
+12-Aug-2015 08:13:38.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/examples
+12-Aug-2015 08:13:38.839 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/examples has finished in 459 ms
+12-Aug-2015 08:13:38.839 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/host-manager
+12-Aug-2015 08:13:38.880 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/host-manager has finished in 41 ms
+12-Aug-2015 08:13:38.880 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/manager
+12-Aug-2015 08:13:38.917 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/manager has finished in 37 ms
+12-Aug-2015 08:13:38.917 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/ROOT
+12-Aug-2015 08:13:38.940 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/ROOT has finished in 23 ms
+12-Aug-2015 08:13:38.944 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 08:13:38.952 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 08:13:38.954 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1036 ms
+12-Aug-2015 08:49:18.022 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/firstweb
+12-Aug-2015 08:49:18.056 SEVERE [localhost-startStop-2] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 1 column 34: Invalid encoding name "".
+ org.xml.sax.SAXParseException; systemId: file:/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/firstweb/WEB-INF/web.xml; lineNumber: 1; columnNumber: 34; Invalid encoding name "".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.createReader(XMLEntityScanner.java:1859)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.setEncoding(XMLEntityScanner.java:449)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanXMLDeclOrTextDecl(XMLDocumentFragmentScannerImpl.java:983)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$XMLDeclDriver.next(XMLDocumentScannerImpl.java:774)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:452)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5066)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1101)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1786)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Aug-2015 08:49:18.061 SEVERE [localhost-startStop-2] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/firstweb/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/firstweb/WEB-INF/web.xml; lineNumber: 1; columnNumber: 34; Invalid encoding name "".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.createReader(XMLEntityScanner.java:1859)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.setEncoding(XMLEntityScanner.java:449)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanXMLDeclOrTextDecl(XMLDocumentFragmentScannerImpl.java:983)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$XMLDeclDriver.next(XMLDocumentScannerImpl.java:774)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:452)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5066)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1101)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1786)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Aug-2015 08:49:18.062 SEVERE [localhost-startStop-2] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 1 column 34
+12-Aug-2015 08:49:18.070 SEVERE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+12-Aug-2015 08:49:18.072 SEVERE [localhost-startStop-2] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+12-Aug-2015 08:49:18.074 SEVERE [localhost-startStop-2] org.apache.catalina.core.StandardContext.startInternal Context [/firstweb] startup failed due to previous errors
+12-Aug-2015 08:49:18.089 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/patrickyu/Developer/eclipse/Java/00.libs/apache-tomcat-8.0.24/webapps/firstweb has finished in 68 ms
+12-Aug-2015 08:53:18.194 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/firstweb]
+12-Aug-2015 08:53:58.243 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/firstweb]
+12-Aug-2015 08:53:58.244 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] has started
+12-Aug-2015 08:53:58.273 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] is completed
+12-Aug-2015 08:54:28.283 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/firstweb]
+12-Aug-2015 08:54:28.284 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] has started
+12-Aug-2015 08:54:28.318 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] is completed
+12-Aug-2015 08:54:48.325 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/firstweb]
+12-Aug-2015 08:54:48.326 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] has started
+12-Aug-2015 08:54:48.353 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] is completed
+12-Aug-2015 08:55:08.365 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/firstweb]
+12-Aug-2015 08:55:08.366 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] has started
+12-Aug-2015 08:55:08.392 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] is completed
+12-Aug-2015 08:55:18.396 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/firstweb]
+12-Aug-2015 08:55:18.396 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] has started
+12-Aug-2015 08:55:18.453 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/firstweb] is completed
+12-Aug-2015 14:19:54.552 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Aug-2015 14:19:54.556 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 14:19:54.622 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 14:19:54.675 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+12-Aug-2015 14:19:54.734 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 14:19:54.738 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Aug-2015 14:19:54.740 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Aug-2015 14:19:54.741 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

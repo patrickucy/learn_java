@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title> Practise 2</title>
+</head >
+<meta http-equiv="content-type" content="text/html;chartset=utf-8"> 
+<body>
+	<h1 align="center">JAVA 实验  <span style="color:red">&lt;day34&gt;</span> </h1>
+
+	<!-- define category -->
+	<ol>
+		<li>个人所得税计算器
+			<ul>
+				<li><a href="#a1">问题</a></li>
+				<li><a href="#a2">方案</a></li>
+				<li><a href="#a3">实现</a></li>
+			</ul>
+		</li>
+
+		<li>命令解析器</li>
+	</ol>
+
+	<!-- define table -->
+	<table align="center" border="2" width="200" height="300" cellpadding="10" cellspacing="0">
+		<caption>我的第一个HTML表格</caption>
+		<thead style="color:green">
+			<tr>
+				<td width="60" height="30">aaaaaaa</td>
+				<td>b</td> 
+			</tr>
+			<tr>
+				<td align="right" valign="top">c</td>
+				<td>d</td> 
+			</tr>
+		</thead>
+		
+		<tbody style="color:blue">
+			<tr>
+				<td>fff</td>
+				<td>ffff</td> 
+			</tr>
+			<tr>
+				<td>eeeee</td>
+				<td>eeeee</td> 
+			</tr>
+		</tbody>
+		
+		<tr>
+			<td>zzzzz</td>
+			<td>zzzzzz</td> 
+		</tr>
+	</table>
+
+	<!-- define table 2 -->
+	<table border="1" width="200" height="100">
+		<caption>Abnormal table 1</caption>
+		<tr>
+			<td colspan="2">a</td>
+		</tr>	
+		<tr>
+			<td>b</td>
+			<td>c</td>
+		</tr>
+
+	</table>
+
+	<!-- define table 2 -->
+	<table border="1" width="200" height="100">
+		<caption>Abnormal table 2</caption>
+		<tr>
+			<td rowspan="2">a</td>
+			<td>b</td>
+		</tr>	
+		<tr>
+			<td>c</td>
+		</tr>
+
+	</table>
+
+
+
+	<h2>个人所得税计算器</h1>
+
+
+		<a name="a1"></a>
+		<h3>1.1 问题</h2>
+			<p>计算个人所得税的缴纳情况, 用户从控制台输入</p>
+
+			<div align="center">
+				<a href="http://www.iqiyi.com" target="_blank">
+					<img src="fish.jpg" align="center">
+				</a>
+				<p>图-1</p>
+
+			</div>
+			的计算方式如表-1所示
+			<table align="center" cellspacing="0" border="1" width="500" height="200">
+				<caption>table-1</caption>
+				<tr style="background-color:gray">
+					<td width="200" height="30">所得额</td>				
+					<td>税率</td>
+					<td>扣除数</td>
+				</tr>
+				<tbody style="color:red">
+					<tr>
+						<td>0~5000</td>				
+						<td>0.1</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>5001~10000</td>				
+						<td>0.2</td>
+						<td>500</td>
+					</tr>
+				</tbody>
+				
+				<tr>
+					<td colspan="3">.....</td>
+				</tr>
+				<tr>
+					<td colspan="3">  
+						<table>
+							<tr>
+								<td width="150">计算公式为:</td>
+								<td>税=金额*税率-扣除数</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<a name="a2"></a>
+			<h3>1.2 方案</h2>
+				<p>用if来实现这个程序</p>
+				<div align="center">
+					<a href="http://www.iqiyi.com" target="_blank">
+						<img src="fish.jpg" align="center">
+					</a>
+					<p>图-2</p>
+				</div>
+
+				<a name="a3"></a>
+				<h3>1.3 实现</h2>
+
+					<p>建立一个java程序</p>
+					<p>public class incomeTax( ) {<br><br><br>}</p>
+
+					<a href="#">Back to Top</a>
+
+					<ol>   <!--ol: order list li:list item ul:unorder list-->
+						<li>list item: create file</li>
+						<li>coding </li>
+						<li>run and test</li>
+					</ol>
+
+					<ul>   <!--ol: order list li:list item ul:unorder list-->
+						<li>aaa
+							<ul>
+								<li><a href="http://www.iqiyi.com">a1</a></li>
+								<li>a1</li>
+								<li>a1</li>
+							</ul>
+						</li>
+						<li>bbb </li>
+						<li>ccc</li>
+					</ul>
+
+
+
+				</body>
+				</html>

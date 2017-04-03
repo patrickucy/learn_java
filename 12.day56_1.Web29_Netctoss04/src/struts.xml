@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="cost" namespace="/cost" extends="json-default">
+		<!-- if you don't specify any method, it will call "execute()" automatically
+		 if you specify method="hello" then it will call hello() -->
+		<action name="findCost" class="com.patrick.action.FindCostAction">
+			<!-- inject a value to this property  -->
+			<param name="pageSize">4</param>
+			<result name="success">
+				/WEB-INF/cost/findCost.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/cost/error.jsp
+			</result>	
+		</action>
+		<action name="deleteCost"
+			class="com.patrick.action.DeleteCostAction">
+			<result name="success" type="redirect">
+				/WEB-INF/cost/findCost.jsp
+			</result>
+			<result name="error">/WEB-INF/cost/error.jsp</result>
+		</action>
+		<action name="toAddCost">
+			<result name="success">/WEB-INF/cost/addCost.jsp</result>
+		</action>
+		<action name="addCost" class="com.patrick.action.AddCostAction">
+			<result name="success" type="redirectAction">findCost</result>
+			<result name="error">/WEB-INF/cost/error.jsp</result>
+		
+		</action>
+		
+		<action name="checkCostName" class="com.patrick.action.CheckCostNameAction">
+			<result name="success" type="json">
+				<param name="root">isExist</param>			
+			</result>
+		</action>
+			
+	</package>
+	
+	<package name="login" namespace="/login" extends="struts-default">
+		<action name="toLogin">
+			<!-- if you are writing an action that doesn't require any logic process, you can 
+			 just ignore "class", struts2 will call a class "ActionSupport" and call its "execute()" 
+			 and return "success"  -->
+			 
+			<result name="success">/WEB-INF/main/login.jsp</result>
+		</action>
+		<action name="login" class="com.patrick.action.LoginAction">
+			<result name="success">/WEB-INF/main/index.jsp</result>
+			<result name="fail">/WEB-INF/main/login.jsp</result>
+		</action>
+		<action name="createImage" class="com.patrick.action.CreateImageAction">
+			<result name="success" type="stream">
+				<param name="inputName">imageStream</param>
+			</result>
+		</action>
+	</package>
+</struts>    

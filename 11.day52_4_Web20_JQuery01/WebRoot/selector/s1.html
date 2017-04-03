@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>s1.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		// id selector
+		function f1() {
+			$('#d1').css('font-size','90px');
+			
+		}
+		
+		// class selector
+		function f2() {
+			$('p.s1').css('color','red');
+		}
+		
+		// element selector
+		function f3() {
+			$('div').css('color','yellow');
+		}
+	
+		// multiple selector
+		function f4() {
+			$('#d1,p').css('font-size','90px');
+		}
+		
+		function f5() {
+			$('*').css('font-size','90px');
+		}
+	</script>
+  </head>
+  
+  <body style="font-size: 30px; font-style: italic">
+    <div id="d1">Hello JQuery</div>
+    
+    <a href="javascript:;" onclick="f1();">f1() Click Me</a>
+    
+    <br/>
+    <div class="s1"> hello java</div>
+    <p class="s1">hello ruby</p>
+    <a href="javascript:;" onclick="f2();">f2() Click Me</a> <br/>
+    
+    <a href="javascript:;" onclick="f3();">f3() Click Me</a> <br/>
+    
+    <a href="javascript:;" onclick="f4();">f4() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f5();">f5() Click Me</a> <br/>
+    
+    
+    
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Project</title>
+	<link rel="stylesheet" type="text/css" href="Demo03_Project2.css">
+</head>
+<meta http-equiv="content-type" content="text/html;chartset=utf-8"> 
+<body>
+	<div id="header">
+		<img src="images/logo.png">
+		<!-- 因为你这里设置的是文本靠右,所以图片会靠右,这里float就可以解决这种问题 -->
+		<a href="#">[Exit]</a>
+	</div>
+	<div id="navi">
+		<ul id="menu">
+			<li><a class="index" href="#"></a></li>
+			<!-- 这里的即可以把图片当背景,也可以直接把
+			图片放在链接中间,实际上应该当背景,放在css里面,方便后期维护 -->
+			<li><a class="role" href="#"></a></li>
+			<li><a class="admin" href="#"></a></li>
+
+			<li></li>
+		</ul>	
+
+
+	</div>
+	<div id="main">
+		<!-- 操作信息提示框 --><!-- 
+		<div id="result" class="success">
+			<span>Alter Successfully!</span>
+			<img src="images/close.png">
+		</div> -->
+
+		<div id="result" class="fail">
+			<span>Your Operation Fail!</span>
+			<img src="images/close.png">
+		</div>
+
+		<div id="operator"></div>
+		<div id="datalist">
+			<form>
+				<table id="dataTable">
+					<tr class="header">
+						<td>
+							<input type="checkbox"> Select All
+						</td>
+						<td>Admin ID</td>
+						<td>Name</td>
+						<td>Role</td>
+						<td>Operation</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="checkbox">
+						</td>
+						<td>1</td>
+						<td>Patrick</td>
+						<td>Super Admin</td>
+						<td>
+							<input class="modify" type="button" value="Alter">
+							<input class="delete" type="button" value="Delete">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="checkbox">
+						</td>
+						<td>2</td>
+						<td>Tom</td>
+						<td>Super Admin</td>
+						<td>
+							<input class="modify" type="button" value="Alter">
+							<input class="delete" type="button" value="Delete">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="checkbox">
+						</td>
+						<td>3</td>
+						<td>Jack</td>
+						<td>Admin</td>
+						<td>
+							<input class="modify" type="button" value="Alter">
+							<input class="delete" type="button" value="Delete">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="checkbox">
+						</td>
+						<td>4</td>
+						<td>William</td>
+						<td>Admin</td>
+						<td>
+							<input class="modify" type="button" value="Alter">
+							<input class="delete" type="button" value="Delete">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="pages"></div>
+	</div>
+	<div id="footer">
+		<p>Super Google Apple Microsoft</p>
+		<p>Copy Right:Patrick Yu</p>
+	</div>
+
+	
+</body>
+</html>

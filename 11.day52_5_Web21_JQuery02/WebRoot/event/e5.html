@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>e5.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<style>
+		.s1{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+		
+		.s2{
+			background-color: yellow;
+		}
+	</style>
+	
+	
+	
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		$(function() {
+		
+		/*
+			$('.s1').mouseenter(function() {
+			// this is the current dom object
+				$(this).addClass('s2');
+			});
+			
+			$('.s1').mouseleave(function() {
+				$(this).removeClass('s2');
+			});
+			
+		*/
+		
+			// combine above together
+			$('div').hover(function() {
+				$(this).addClass('s2');
+			}, function() {
+				$(this).removeClass('s2');
+			});
+			
+		});
+	</script>
+	
+	
+  </head>
+  
+  <body>
+    <div class="s1">
+    	<a href="javascript:;" > click me</a>
+    
+    </div>
+  </body>
+</html>

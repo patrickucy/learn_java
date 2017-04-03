@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="cost" namespace="/cost" extends="netctoss">
+		<action name="findCost" class="com.patrick.action.cost.FindCostAction" method="findCosts">
+			<result name="success">/WEB-INF/cost/findCost.jsp</result>
+		
+		</action>
+			
+	</package>
+
+
+</struts>
+	

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8">
+
+<!DOCTYPE orders[
+	<!ELEMENT orders(order+)>
+	<!ELEMENT order(cust-name,airline,time,dest)>
+	<!ELEMENT cust-name(#PCDATA)>
+	<!ELEMENT airline(#PCDATA)>
+	<!ELEMENT time(#PCDATA)>
+	<!ELEMENT dest(#PCDATA)>	
+	<!ATTLIST order type CDATA #REQUIRED>
+]>
+
+<orders>
+</orders>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>d8.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+  	<script type="text/javascript">
+  		$(function() {
+			$('#b1').click(function() {
+			
+				//$('#d0 div').css('font-size','80px');
+				
+				
+				/* var $obj = $('#d0').children('div');
+				alert($obj.length);
+				$obj.css('font-size','80px'); */
+				
+				
+				
+				//$('#d5').next('p').css('font-size','80px');
+				//$('#d5').prev('div').css('font-size','80px');
+				//$('#d3').siblings('div').css('font-size','80px');
+				$('#d0').find('p').css('font-size','90px');
+				alert($('#d1').parent().attr('id'));
+				
+			});
+		});
+  	</script>
+  	<style type="text/css">
+  		.s1{
+  			color:red;
+  		}
+  		.s2{
+  			font-size: 80px;
+  		}
+  	</style>
+	
+  </head>
+  
+  <body>
+    <div id="d0">
+		<div id="d1">hello 1</div>
+		<div id="d2">hello 2</div>
+		<div id="d3">hello 3</div>
+		<div id="d4">hello 4</div>
+		<div id="d5">hello 5</div>
+		<p id="p0"> hello p </p>
+	</div>
+    
+    
+    <input type="button" value="click me" id="b1">
+  </body>
+</html>

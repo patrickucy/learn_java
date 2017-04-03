@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<question>
+	<q1>1&lt;2</q1>
+	<q2><![CDATA[ 1 < 2 & 2 > 3 ]]></q2>
+</question>

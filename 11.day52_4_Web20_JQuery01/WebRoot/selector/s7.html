@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>s7.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		function f1() {
+			//$('ul li:eq(1)').css('color','orange');
+			$('ul li:nth-child(2)').css('color','orange');
+		}
+		
+
+		
+	
+	</script>
+  </head>
+  
+  <body>
+    <ul>
+    	<li>item1</li>
+    	<li>item2</li>
+    	<li>item3</li>
+    
+    </ul>
+    
+       <ul>
+    	<li>item5</li>
+    	<li>item6</li>
+    	<li>item7</li>
+    
+    </ul>
+    <a href="javascript:;" onclick="f1();">f1() Click Me</a> <br/>
+    <a href="javascript:;" onclick="f2();">f2() Click Me</a> <br/>
+
+    
+    
+  </body>
+</html>

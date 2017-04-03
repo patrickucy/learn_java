@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>e1.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	
+	<script type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		function f1(e) {
+			/*
+			use event object to find our source event
+			*/
+			var obj = e.target || e.srcElement;
+			alert(obj.innerHTML);
+			
+			/*
+			   the purpose of our event object: gain the cordinate of our mouse
+			*/
+			alert(e.clientX +','+e.clientY);
+			
+		}
+	</script>
+	
+	
+  </head>
+  
+  <body>
+    <a href="javascript:;" onclick="f1(event);">click 1</a> <br/>
+    <a href="javascript:;" onclick="f1(event);">click 2</a> <br/>
+  </body>
+</html>

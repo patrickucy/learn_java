@@ -1,0 +1,16 @@
+package test;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+
+public class Test {
+
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		String str = "李白";
+		String str2 = URLEncoder.encode(str,"utf-8");
+		System.out.println(str2); // unicode for chinese LiBai
+		String str3 = URLDecoder.decode(str2,"utf-8");
+		System.out.println(str3);
+	}
+}

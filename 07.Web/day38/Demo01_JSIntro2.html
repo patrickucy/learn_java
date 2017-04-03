@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>JS Intro</title>
+	<script type="text/javascript" src="Demo01_JSIntro2.js"></script>
+	<!-- 这里的language-javascript是可选的,新的标准就直接用sublime提示就好了 -->
+	<script type="text/javascript" language="javascript"></script>
+	<style type="text/css">
+		span.success {
+			color: green;
+			border: 1px solid green;
+		}
+		span.fail {
+			color: red;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+
+	<form>
+		<!-- 模拟方法的重载 -->
+		<input type="button" value="methodOverload" onclick="M(10,30);">
+		<input type="button" value="arraySort" onclick="testArray();">
+
+		<br><br>
+
+		<input type="button" value="1" onclick="cal(this.value);">
+		<input type="button" value="2" onclick="cal(this.value);">
+		<input type="button" value="3" onclick="cal(this.value);">
+		<input type="button" value="+" onclick="cal(this.value);">
+		<input type="button" value="-" onclick="cal(this.value);">
+		<input type="button" value="=" onclick="cal(this.value);">
+		<br>
+		<input type="text" id="txtN"> 
+		<br>
+		<!-- 对话框 -->
+		<input type="button" value="prompt" onclick="window.prompt();">
+		<input type="submit" value="delete" onclick="return window.confirm('Are you sure to delete?');">
+		<input type="button" value="new tab" onclick="openwin()">
+
+		<br>
+		<input type="text" id="txtTime">
+		<input type="button" value="displayCurrentTime" onclick="showTime();">
+		<input type="button" value="startClock" onclick="startClock();">
+		<input type="button" value="stopClock" onclick="stopClock();">
+
+		<br>
+		<input type="button" value="5s later prompt hello" onclick="wait();">
+		if you want to cancel,please click <a href="javascript:cancelAlert();">here</a>
+
+		<br>
+
+		<input type="button" value="test DOM operation" onclick="testDOM();">
+		<select id="s1"> 
+			<!-- 这里的空格,回车都是节点,这就是为什么右边的js 需要过滤 -->
+			<option>aaa</option>
+			<option>bbb</option>
+			<option>ccc</option>
+		</select>	
+		<img src="images/apple.jpg" id="img1">
+		<p id="p1">Hell world </p>
+
+		<br>
+		Username: <input type="text" id = "txtName" onblur="validName();">
+		<span id="nameInfo"> 3~5 lowercasee letters </span>
+		<br>
+		Age: <input type="text" id="txtAge" onblur="validAge();">
+		<span id="ageInfo">2 numbers</span>
+		<input type="submit" value="Save" onclick="return validData();">
+
+
+		<br><br><br>
+	</form>
+
+
+
+</body>
+</html>
+
+
+

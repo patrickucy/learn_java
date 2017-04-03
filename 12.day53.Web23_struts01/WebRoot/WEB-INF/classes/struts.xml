@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<!-- 1. package: wrap all actions, prevent chaos
+     2. there are a lot of packages under root struts, different package can't has the same name 
+     3. namespace: is the real url pattern, just right next to project name
+     4. extends: it tells where it inherits. And include all the data from that package 
+ -->
+ 
+ 
+	<package name="p1" namespace="/demo" extends="struts-default">
+		 
+		<!--  1. define a business component, and assign its class.
+		 	ip:port/ProjectName/NameSpace/Action
+		 2. you can have more than one action under a package, and they can't share the same name 
+		 3. name: it is part of the ulr request, just right next to namespace
+		 4. class: assign the class for this action
+		 5. method: assign the exact method for this action  -->
+		 
+		 
+		<action name="hello" class="com.patrick.action.HelloAction" method="execute">
+			
+			<!-- 1. use result here to find jsp page, the return value helps you to find the page 
+			2. we pair the "name" with the return value from our action method. Once paired, we call current result 
+			3. the content is the the outgoing jsp page  -->	
+			
+			<result name="success">
+				/hello.jsp
+			</result>
+		</action>
+	</package>
+
+
+</struts>    

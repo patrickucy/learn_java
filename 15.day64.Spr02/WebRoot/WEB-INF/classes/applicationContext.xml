@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+<!-- 声明定义DAO组件 -->
+<bean id="hibernateCostDao" class="com.patrick.dao.HibernateCostDAOImpl" scope="prototype" lazy-init="default" init-method="myInit">
+</bean>
+
+
+
+<bean id="jdbcCostDao" class="com.patrick.dao.JdbcCostDAOImpl" scope="singleton"></bean>
+
+<bean id="logger" class="com.patrick.aop.LoggerAop"></bean>
+<bean id="exception" class="com.patrick.aop.ExceptionLogger"></bean>
+ 
+<aop:config> <!-- proxy-target-class="true"  强制用CGLIB的方式生成动态代理类,当你强制想把有接口的类当成没接口的类做AOP -->
+	<!-- 定义切入点,指定目标及其方法 -->
+	<aop:pointcut expression="within(com.patrick.dao..*)" id="mytarget"/>
+ 	<!-- 将Logger bean升级成方面 -->
+	
+	<aop:aspect id="loggerAspect" ref="logger">
+		<!-- 指定通知类型 -->
+		<!-- loggerAspect 方面采用了后置通知作用到mytarget切入点指定的的目标方法上, 即先执行mytarget指定的目标方法,没有异常再执行loggerAspect方面的execute方法 -->
+		<aop:around method="execute" pointcut-ref="mytarget"/>
+	</aop:aspect>
+	
+	<aop:aspect id="exceptionAspect" ref="exception">
+		<aop:after-throwing method="logger" pointcut-ref="mytarget" throwing="ex"/> <!--  -->
+	
+	</aop:aspect>
+	
+</aop:config>
+
+
+</beans>

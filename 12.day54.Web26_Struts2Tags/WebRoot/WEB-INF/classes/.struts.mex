@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="cost" location="52,127" size="257,102">
+    <action name="findCost" location="3,21" size="97,50" />
+  </package>
+</Struts2Diagram>
+

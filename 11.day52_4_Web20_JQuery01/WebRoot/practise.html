@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>practise.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=US-ASCII">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    
+    <style type="text/css">
+    	.row1{
+    		background-color: yellow;
+    	}
+    	.row2{
+    		background-color: orange;
+    	}
+    	.selected{
+    		background-color: red;
+    	}
+    </style>
+    
+  	<script type="text/javascript" src="js/jquery-1.4.3.js"></script>  
+	<script type="text/javascript">
+		$(function() {
+			$('tbody tr:even').addClass('row1');
+			$('tbody tr:odd').addClass('row2');
+			
+			$('#b1').click(function() {
+				$('tbody tr:contains(mark) td:eq(1)').addClass('selected');
+			});
+		});
+		
+		
+	</script>
+  </head>
+  
+  <body>
+    <table>
+    	<thead>hwllo</thead>
+    	<tbody>
+    		<tr> <td>china</td><td>1000</td><td>rmb</td> </tr>
+    		<tr> <td>america</td><td>2000</td><td>dollar</td> </tr>
+    		<tr> <td>japan</td><td>3000</td><td>yan</td> </tr>
+    		<tr> <td>british</td><td>4000</td><td>pound</td> </tr>
+    		<tr> <td>germany</td><td>5000</td><td>mark</td> </tr>	
+    	</tbody>
+    </table>
+    
+    <button id="b1">Highlight</button>
+  </body>
+</html>
